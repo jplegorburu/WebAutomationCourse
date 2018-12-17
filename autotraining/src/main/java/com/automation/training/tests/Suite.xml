@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My test suite" >
+    <parameter name="browser" value="firefox"/>
+    <test name="My first test">
+        <groups>
+        	<run>
+        		<include name="example1"></include>
+        		<include name="example2"></include>
+        		<include name="example3"></include>
+        		<include name="example4"></include>
+        		<include name="example5"></include></run></groups>
+        <classes>
+            <class name="com.automation.training.tests.ExampleTests"></class>
+        </classes>
+    </test>
+</suite>
